@@ -13,6 +13,9 @@
  <xsl:output encoding="UTF-8" indent="yes" method="xml" omit-xml-declaration="no" cdata-section-elements=""/>
  <xsl:preserve-space elements="h:script"/>
 <xsl:template match="/">
+ <saxon:output method="xml" encoding="utf-8" href="acknowledgments.xhtml">
+<xsl:call-template name="chunk" ><xsl:with-param name="node" select="//*[@id='acknowledgments']"/></xsl:call-template>
+</saxon:output>
  <saxon:output method="xml" encoding="utf-8" href="chapter1.xhtml">
 <xsl:call-template name="chunk" ><xsl:with-param name="node" select="//*[@id='section1']"/></xsl:call-template>
 </saxon:output>
@@ -63,7 +66,7 @@
 <div style="text-align:center"><i>Editors</i></div>
 <h2 style="text-align:center">Jonathan Ben-Dov and Seth L. Sanders</h2>
 <br/>
-<div style="text-align:center">©2013 The Authors</div>
+<div style="text-align:center">©2014 The Authors</div>
 <br/>
 </div>
   
