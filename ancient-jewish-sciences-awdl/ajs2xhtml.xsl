@@ -119,6 +119,6 @@
    </xsl:element>
  </xsl:template>
 
-
+<xsl:template match="*[@class='index_entry_reference']"><xsl:apply-templates/></xsl:template>
 </xsl:stylesheet>
  
