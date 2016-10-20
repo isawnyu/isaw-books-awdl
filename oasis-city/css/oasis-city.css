@@ -1,0 +1,23 @@
+hr {
+  text-align: center; /* horizontal centering */
+  line-height: 1px; /* vertical centering */
+  border-width: 0px 0; /* top and bottom borders */
+  margin: 50px 0px; /* 20px space above/below, 10px left/right */
+}
+
+hr:after {
+  content: "§"; /* CHOOSE SYMBOL */
+}
+
+section ul {
+  list-style-type: none;
+  padding-left:0;
+}
+
+.abbreviation {
+   text-indent:0;
+}
+
+#tableofcontents ul>li>ul>li {
+    text-indent: 40px;
+}
